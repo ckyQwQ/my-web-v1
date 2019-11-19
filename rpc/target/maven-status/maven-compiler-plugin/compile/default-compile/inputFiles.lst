@@ -1,0 +1,13 @@
+/Users/chenkeyu/Desktop/halfangel/rpc/src/main/java/cn/halfangel/rpc/properties/ResultListStr.java
+/Users/chenkeyu/Desktop/halfangel/rpc/src/main/java/cn/halfangel/rpc/properties/ResultDouble.java
+/Users/chenkeyu/Desktop/halfangel/rpc/src/main/java/cn/halfangel/rpc/properties/ResultLong.java
+/Users/chenkeyu/Desktop/halfangel/rpc/src/main/java/cn/halfangel/rpc/properties/ResultInt.java
+/Users/chenkeyu/Desktop/halfangel/rpc/src/main/java/cn/halfangel/rpc/service/impl/TestThriftServiceImpl.java
+/Users/chenkeyu/Desktop/halfangel/rpc/src/main/java/cn/halfangel/rpc/properties/thrift_datatypeConstants.java
+/Users/chenkeyu/Desktop/halfangel/rpc/src/main/java/cn/halfangel/rpc/TestApplication.java
+/Users/chenkeyu/Desktop/halfangel/rpc/src/main/java/cn/halfangel/rpc/properties/ResultStr.java
+/Users/chenkeyu/Desktop/halfangel/rpc/src/main/java/cn/halfangel/rpc/properties/ResultBool.java
+/Users/chenkeyu/Desktop/halfangel/rpc/src/main/java/cn/halfangel/rpc/service/TestThriftService.java
+/Users/chenkeyu/Desktop/halfangel/rpc/src/main/java/cn/halfangel/rpc/properties/ResultMapStrStr.java
+/Users/chenkeyu/Desktop/halfangel/rpc/src/main/java/cn/halfangel/rpc/properties/ResultSetStr.java
+/Users/chenkeyu/Desktop/halfangel/rpc/src/main/java/cn/halfangel/rpc/properties/ThriftResult.java
