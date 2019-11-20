@@ -19,10 +19,10 @@ public class KafkaProducerTest {
         this.kafkaTemplate = kafkaTemplate;
     }
 
-    @KafkaListener(id = "test-consumer", topics = {TOPIC})
-    public void listen(ConsumerRecord<String, String> cr) throws Exception {
-        log.debug(Thread.currentThread().getName() + "  {}", cr.value());
-    }
+//    @KafkaListener(id = "test-consumer", topics = {TOPIC})
+//    public void listen(ConsumerRecord<String, String> cr) throws Exception {
+//        log.debug(Thread.currentThread().getName() + "  {}", cr.value());
+//    }
 
     public String test() {
         kafkaTemplate.send(TOPIC, "UUID", "hahaha");
