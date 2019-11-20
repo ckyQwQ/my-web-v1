@@ -2,6 +2,7 @@ package cn.halfangel.rpc;
 
 import cn.halfangel.rpc.service.TestThriftService;
 import cn.halfangel.rpc.service.impl.TestThriftServiceImpl;
+import lombok.extern.slf4j.Slf4j;
 import org.apache.thrift.TProcessor;
 import org.apache.thrift.protocol.TBinaryProtocol;
 import org.apache.thrift.server.TNonblockingServer;
@@ -9,7 +10,10 @@ import org.apache.thrift.server.TServer;
 import org.apache.thrift.transport.TFramedTransport;
 import org.apache.thrift.transport.TNonblockingServerSocket;
 import org.apache.thrift.transport.TTransportException;
+import org.springframework.stereotype.Component;
 
+@Slf4j
+@Component
 public class TestApplication {
     private static int m_thriftPort = 12356;
     private static TestThriftServiceImpl m_myService = new TestThriftServiceImpl();
@@ -26,7 +30,7 @@ public class TestApplication {
         m_server = new TNonblockingServer(tnbArgs);
     }
 
-    public static boolean start()
+    public boolean start()
     {
         try {
             createNonblockingServer();
@@ -34,15 +38,17 @@ public class TestApplication {
             System.out.println("start server error!" + e);
             return false;
         }
+
+        log.info("测试");
         System.out.println("service at port: " + m_thriftPort);
         m_server.serve();
         return true;
     }
-    public static void main(String[] args)
-    {
-        if(!start())
-        {
-            System.exit(0);
-        }
-    }
+//    public static void main(String[] args)
+//    {
+//        if(!start())
+//        {
+//            System.exit(0);
+//        }
+//    }
 }

@@ -4,7 +4,9 @@ import cn.halfangel.rpc.properties.ResultInt;
 import cn.halfangel.rpc.properties.ResultStr;
 import cn.halfangel.rpc.properties.ThriftResult;
 import cn.halfangel.rpc.service.TestThriftService;
+import org.springframework.web.bind.annotation.RestController;
 
+@RestController
 public class TestThriftServiceImpl implements TestThriftService.Iface {
 
     @Override
