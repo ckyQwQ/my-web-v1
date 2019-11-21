@@ -20,3 +20,7 @@ bin/kafka-topics.sh --list --zookeeper localhost:2181
 bin/kafka-topics.sh --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic test1
 bin/kafka-console-producer.sh --broker-list localhost:9092 --topic test
 bin/kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic test --from-beginning
+
+
+kafka为什么本地链接不上？？防火墙
+https://blog.csdn.net/cysdxy/article/details/52337364

@@ -1,6 +1,7 @@
 package cn.halfangel.web.controller;
 
 import cn.halfangel.mq.service.KafkaProducerTest;
+import cn.halfangel.mq.service.KafkaProducerrTest1;
 import cn.halfangel.rpc.properties.ResultStr;
 import cn.halfangel.rpc.service.TestThriftService;
 import lombok.extern.slf4j.Slf4j;
@@ -42,6 +43,8 @@ public class LoginController {
 
     @RequestMapping(path = "/testkafka", method = RequestMethod.GET)
     public String testKafka(HttpServletRequest request) {
+//        KafkaProducerrTest1 t = new KafkaProducerrTest1("test");
+//        t.send();
         return test.test();
     }
 }
